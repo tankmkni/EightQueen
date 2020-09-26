@@ -1,0 +1,252 @@
+﻿
+body{
+	color:gold;
+	background:linear-gradient(60deg
+		,pink,deeppink,crimson,red,tomato,orange,gold,yellow,greenyellow
+		,cyan,skyblue,dodgerblue,blue,blueviolet,purple,indigo);
+	background-size:3000% 600%;
+	animation:gradation 60s ease infinite;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	width:100vw
+}
+@keyframes gradation{
+	0%{background-position:0% 100%;}
+	50%{background-position:100% 0%;}
+	100%{background-position:0% 100%;}
+}
+
+
+#title{
+	margin:auto;
+	padding:3vmin;
+	font-size:6vmin;
+	font-weight:bold;
+	text-align:center;
+	text-shadow:0.5vmin 0.5vmin 0 plum;
+	-webkit-text-stroke: 0.1vmin silver;
+	transition: all 3s linear 0s;
+}
+#n{font-size:8vmin;} /*「ｎ」のid*/
+#bracket{font-size:4vmin;} /*(括弧)のid*/
+#title:hover{
+	transform: rotate3d(1,1,1,720deg);
+}
+
+
+fieldset{
+	position:relative;
+	border:0;
+	padding:0;
+}
+legend{
+	font-size:3.5vmin;
+	font-weight:bold;
+	color:tomato;
+	background-color:transparent;
+	-webkit-text-stroke: 0.1vmin yellow;
+	position:absolute;
+	bottom:0;
+	right:6vmin;
+	transition: all 0.3s linear 0s;
+}
+legend:hover{
+	transform: scale(3) translate(-10vmin,-15vmin);
+}
+legend:active{
+	transform: scale(3) translate(-10vmin,-15vmin);
+}
+
+
+#board{ /*盤の<table>のid*/
+	border:4vmin;
+	border-color:whitesmoke;
+	border-style:groove;
+	border-radius:3%;
+	border-spacing:0px 0px;
+	height:95vmin;
+	width:95vmin;
+}
+
+
+td{
+	background-size:90% 90%;
+}
+td:hover{
+	transform: scale(1.1);
+}
+td:active{
+	transform: scale(1.2);
+}
+
+
+td,.piece{
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+.topButtons{
+	font-size:4vmin;
+	font-weight:bold;
+	text-decoration:none;
+	background:chocolate;
+	color:maroon;
+	box-shadow:0px 0.5vmin 0vmin rgba(0, 0, 0, 0.3);
+	border-bottom:solid 0.7vmin maroon;
+	border-radius:5%;
+}
+.topButtons:active{
+	-webkit-transform:translateY(0.5vmin);
+	transform:translateY(0.5vmin);
+	box-shadow:0px 0px 1vmin rgba(0, 0, 0, 0.3 );
+	border-bottom:none;
+}
+.topButtons:hover{
+	transform: scale(1.03);
+}
+
+
+.menuButtons{
+	font-size:2.8vmin;
+	font-weight:bold;
+	height:15vmin;
+	width:15vmin;
+	color:royalblue;
+	background-color:skyblue;
+	border-radius:10%;
+	box-shadow:0px 0.5vmin 0vmin rgba(0, 0, 0, 0.3);
+	border-bottom:solid 0.7vmin dodgerblue;
+}
+.menuButtons:active{
+	-webkit-transform:translateY(0.5vmin);
+	transform:translateY(0.5vmin);
+	box-shadow:0px 0px 1vmin rgba(0, 0, 0, 0.3 );
+	border-bottom:none;
+}
+.menuButtons:hover{
+	transform: scale(1.03);
+}
+
+
+.piece{
+	width:8vmin;
+	height:8vmin;
+	background-color:lightsalmon;
+	font-size:3vmin;
+	font-weight:bold;
+	border:15%;
+	border-radius:50%;
+	border-color:orange;
+	transition: all 0.3s linear 0s;
+}
+.piece:hover{
+	transform: scale(1.8);
+}
+.piece:active{
+	-webkit-transform:translateY(0.5vmin);
+	transform:translateY(0.5vmin);
+	box-shadow:0px 0px 1vmin rgba(0, 0, 0, 0.3 );
+	border-bottom:none;
+}
+
+/**** 横向き **********************************************************************************************************/
+@media screen and (orientation: landscape){
+
+	#main {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+
+
+	#buttons{
+		height:100%;
+		margin-left:0.1vmin;
+	}
+
+
+	.topButtons{
+		display:block;
+		height:30vmin;
+		width:15vmin;
+		margin:1vmin;
+		margin-right:0;
+		margin-left:0;
+		text-shadow:-0.3vmin 0.3vmin 0.2vmin rgba(255, 255, 255, 0.5);
+	}
+
+
+	.menuButtons{
+		display:block;
+		margin:1vmin;
+		margin-right:0;
+		margin-left:0;
+		text-shadow:0.2vmin  0.2vmin 0.2vmin rgba(9, 0, 255, 0.5)
+				  ,-0.2vmin -0.2vmin 0.2vmin rgba(255, 255, 255, 0.5);
+	}
+
+
+	.piece{
+		display:block;
+		width:15vmin;
+		margin-left:0.5vmin;
+		text-shadow:0.2vmin 0.2vmin 0.2vmin rgba(255, 255, 255, 0.5);
+		background-size:48% 90%;
+	}
+
+
+	.verticalText{
+		writing-mode:vertical-rl;
+		text-orientation:upright;
+	}
+}
+
+
+/**** 縦向き **********************************************************************************************************/
+@media screen and (orientation: portrait){
+
+	#main {
+		display:list-item;
+		list-style:none;
+		text-align:center;
+	}
+
+
+	#buttons{
+		margin-top:1vmin;
+	}
+
+
+	.topButtons{
+		height:15vmin;
+		width:30vmin;
+		text-shadow:0.2vmin 0.2vmin 0.2vmin rgba(255, 255, 255, 0.5);
+		margin:0.5vmin;
+	}
+
+
+	.menuButtons{
+		display:inlign-brock;
+		vertical-align:top;
+		margin:0.1vmin;
+		text-shadow:0.2vmin  0.2vmin 0.2vmin rgba(9, 0, 255, 0.5)
+				  ,-0.2vmin -0.2vmin 0.2vmin rgba(255, 255, 255, 0.5);
+	}
+
+
+	.piece{
+		display:inlign-brock;
+		vertical-align:top;
+		text-align:center;
+		text-shadow:-0.3vmin 0.3vmin 0.2vmin rgba(255, 255, 255, 0.5);
+		height:15vmin;
+		background-size:90% 48%;
+	}
+	.piece span{
+		writing-mode:vertical-rl;
+		text-orientation:upright;
+	}
+}

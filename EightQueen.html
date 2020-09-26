@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" countent="width=device-width,initial-scale=1"/>
+<title>8Queen</title>
+<link rel="stylesheet" href="css/normalizeResetCss.css" />		<!-- リセットＣＳＳ -->
+<link rel="stylesheet" href="css/eightQueen_css.css" />	<!-- 自作ＣＳＳ -->
+<script type="text/javascript" src="js/eightQueen.js"></script>	<!-- scriptファイル -->
+<script type="text/javascript" src="js/RandomColor.js"></script><!-- scriptファイル -->
+<script type="text/javascript" src="js/BoardDraw.js"></script>	<!-- scriptファイル -->
+<script type="text/javascript" src="js/RootCheck.js"></script>	<!-- scriptファイル -->
+<script type="text/javascript" src="js/IncreaseButton.js"></script>	<!-- scriptファイル -->
+</head>
+
+<body>
+<div id="main"><!-- 全体をブロック化 -->
+<p id="title"></p><!-- 【タイトル表示】中身は下記のscriptで表記 -->
+
+<fieldset><!-- カウンターを盤の枠線に表示させるための無色の枠線 -->
+<legend></legend><!-- 【カウンター表示】中身は下記のscriptで表記 -->
+
+<!-- 【盤のテーブル】中身は下記のscriptで表記 -->
+<table id="board"></table>
+</fieldset>
+
+<!-- 【ボタン】中身は下記のscriptで表記 -->
+<div id="buttons"></div>
+</div>
+
+<!-- 【盤とボタンを描く(draw)関数の呼び出し】-->
+<script type="text/javascript"><!--;
+boardDraw();
+drawTopButtons()
+--></script>
+
+</body>
+</html>
+
