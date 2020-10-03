@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,6 @@ legend{
 	
 	font-size:26px;
 }
-
 .navigation {
   font-weight:bold;
   /* flexboxで要素を真ん中に指定 */
@@ -73,14 +73,11 @@ legend{
   transition: .5s;
   color:white;
 }
-
-
 </style>
 </head>
 <body>
 <div id="container">
-	<h1>Eight Queen</h1>
-	
+  <h1>Eight Queen</h1>
   <div class="navigation">
     <ul>
       <li><a href="EightQueen.html" target="_blank">ゲーム開始</a></li>
@@ -88,15 +85,37 @@ legend{
       <li><a href="ProjectDocuments.zip">プロジェクト文書</a></li>
     </ul>
   </div>
-	
 	<fieldset>
 		<legend>作品プロフィール</legend>
 		<dl>
 			<dt>使用言語：</dt>
-			<dd>HTML , JavaScript , CSS</dd>
+			<dd>HTML / JavaScript / CSS</dd>
 			<dt>概要：</dt>
 			<dd>8×8マスの盤に、8ヶのクイーンを移動範囲が重ならないように配置するパズルゲーム</br>
-				レスポンシブデザインを取り入れ、画面長の縦/横に合わせてボタンなどの配置が変わる</dd>
+				レスポンシブデザインを取り入れ、画面長の縦/横に合わせてボタンなどの配置が変わる				
+			</dd>
+			<dt>機能：</dt>
+			<dd><li>盤、背景色を「ランダム」で変更可能</br>
+					　(好きなタイミングでワンタッチで行える)</li>
+				<li>駒を選択して変更可能</br>
+					　(違う駒を同時に設置も可能)</li>
+				<li>すでに置いてある駒の移動範囲には置けない制限機能</li>
+				<li>置けないマスの明示のON/Oの切り替え機能</br>
+					　(いつでも切り替えられる)</li>
+				<li>置いた駒の数をカウントダウンするカウンター</br>
+					　(クリックすると拡大表その他示)</li>
+				<li>押されたボタンによってボタンの構成を入れ替える機能</br>
+					　(選択すると反応もする)</li>
+				<li>盤のマスの数を任意の数に変更可能</br>
+					　(入力値をバリデ‐ションし、文字や不適切な値には警告を表記)</br>
+					　(タイトル、カウンターの表記も入力値に合わせて変化)</br>
+					　(念のため最高値を100×100に制限)</li>
+			</dd>
+			<dt>その他：</dt>
+			<dd>習ったばかりのJavaScriptがすぐにブラウザで実行できることが楽しくて作ってみました。
+				CSSのinline/blockそれぞれで要素を中央に寄せる方法の違いや、レスポンシブデザインを実装する為の微調整が一番苦労しました。
+				100×100マスにして移動範囲を表示させると独特な幾何学模様になるのも面白いです。
+			</dd>
 		</dl>
 	</fieldset>
 </div>

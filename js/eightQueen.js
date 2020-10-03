@@ -6,6 +6,8 @@
 
 	var range = 8;							//【縦横の列の数を決める変数(初期値は８)】
 
+	var maxRange = 100;						//【rangeの最高値を設定する変数(初期値は100)】
+
 	var count = range;						//【置いたコマをカウントダウン】
 
 	var pieceSrc = "beetle";		//【コマの初期設定】
@@ -153,11 +155,14 @@ function changeSize(){
 		//入力値の適正を確認
 	var tmp = input % 1;
 
-	if( input == null || input < 0 || tmp != 0 ){
-		alert("数値を入力してください");
+	if( input == null || input <= 0 || tmp != 0 ){
+		alert("1以上の数値を入力してください");
 		return;
-	}else if( input == 0 || input == 2 || input == 3 ){
+	}else if( input == 2 || input == 3 ){
 		alert("解の無い選択です");
+		return;
+	}else if( input > maxRange ){
+		alert("数が大き過ぎます");
 		return;
 	}
 

@@ -229,7 +229,7 @@ td,.piece{
 
 
 	.menuButtons{
-		display:inlign-brock;
+		display:inlign-block;
 		vertical-align:top;
 		margin:0.1vmin;
 		text-shadow:0.2vmin  0.2vmin 0.2vmin rgba(9, 0, 255, 0.5)
@@ -238,7 +238,7 @@ td,.piece{
 
 
 	.piece{
-		display:inlign-brock;
+		display:inlign-block;
 		vertical-align:top;
 		text-align:center;
 		text-shadow:-0.3vmin 0.3vmin 0.2vmin rgba(255, 255, 255, 0.5);
