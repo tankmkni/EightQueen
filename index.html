@@ -11,10 +11,19 @@ body{
 	color:white;
 	font-size:24px;
 }
+h1{margin-bottom: 1px;}
 #container{
 	margin:auto;
 	max-width:70vw;
 	min-width:850px;
+}
+iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1vh;
+	width:48vw;
+	height:30vw;
 }
 fieldset{
 	border:5px double white;
@@ -49,8 +58,8 @@ legend{
 }
 .navigation ul li {
   display: inline-block;
-  background: chocolate;
-  border: 4px groove chocolate;
+  background: crimson;
+  border: 4px groove crimson;
   border-radius:3%;
 }
 .navigation ul li a {
@@ -62,25 +71,30 @@ legend{
   float: left;
   height: 50px;
   line-height: 50px;
+  font-size:2vmax;
 }
 .navigation ul li:hover {
   /* ナビゲーションをマウスオーバーした際のアニメーションと速度を指定 */
   transition: .7s;
-  background: maroon;
+  background: firebrick;
 }
 .navigation ul li:hover > a{
   /* ナビゲーションの文字をマウスオーバーした際のアニメーションと速度を指定 */
   transition: .5s;
-  color:white;
+  color:lightcyan;
 }
 </style>
 </head>
 <body>
 <div id="container">
   <h1>Eight Queen</h1>
+  <iframe src="https://tankmkni.github.io/EightQueen/EightQueen.html">
+		このページでは、インラインフレームを使用しています。
+		対応しているブラウザで表示願います。
+  </iframe>
   <div class="navigation">
     <ul>
-      <li><a href="EightQueen.html" target="_blank">ゲーム開始</a></li>
+      <li><a href="EightQueen.html" target="_blank">別画面で表示</a></li>
       <li><a href="SourceCode.zip">ソースコード</a></li>
       <li><a href="ProjectDocuments.zip">プロジェクト文書</a></li>
     </ul>
