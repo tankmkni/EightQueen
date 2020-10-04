@@ -82,14 +82,6 @@ legend{
   transition: .5s;
   color:lightcyan;
 }
-/**** 横向き **********************************************************************************************************/
-@media screen and (orientation: landscape){
-	.navigation ul li a {font-size: 3vh;}
-}
-/**** 縦向き **********************************************************************************************************/
-@media screen and (orientation: portrait){
-	.navigation ul li a {font-size: 3vw;}
-}
 </style>
 </head>
 <body>
