@@ -71,7 +71,6 @@ legend{
   float: left;
   height: 50px;
   line-height: 50px;
-  font-size:2vmax;
 }
 .navigation ul li:hover {
   /* ナビゲーションをマウスオーバーした際のアニメーションと速度を指定 */
@@ -82,6 +81,14 @@ legend{
   /* ナビゲーションの文字をマウスオーバーした際のアニメーションと速度を指定 */
   transition: .5s;
   color:lightcyan;
+}
+/**** 横向き **********************************************************************************************************/
+@media screen and (orientation: landscape){
+	.navigation ul li a {font-size: 3vh;}
+}
+/**** 縦向き **********************************************************************************************************/
+@media screen and (orientation: portrait){
+	.navigation ul li a {font-size: 3vw;}
 }
 </style>
 </head>
