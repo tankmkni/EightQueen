@@ -7,7 +7,7 @@
 <title>index</title>
 <style>
 body{
-	background:tomato;
+	background-image:url("img/cork-board.png");
 	color:white;
 	font-size:24px;
 }
@@ -49,7 +49,7 @@ legend{
 .navigation ul {
   display: block;
   width:100%;
-  background: tomato;
+  background:transparent;
   /* リストの無駄なスタイルを削除 */
   list-style:none;
   padding:0 20px;
