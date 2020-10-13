@@ -46,8 +46,8 @@ function pieceChangeButton(){
 
 	var tag = document.getElementById("buttons");
 
-	var pieceNames = new Array("beetle","alf","DarthVader","JollyRoger","knight"
-								,"hat","penguin","mario","Luffy","naruto","edo");	//駒の種類
+	var pieceNames = new Array("queen_1","queen_2","knight","alf","DarthVader","beetle"
+								,"hat","penguin","mario","Luffy","naruto");	//駒の種類
 
 	var top = '<button id="';		//挿入するタグの最初の文
 	var end = '"></button>';		//挿入するタグの最後の文

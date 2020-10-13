@@ -10,7 +10,7 @@
 
 	var count = range;						//【置いたコマをカウントダウン】
 
-	var pieceSrc = "beetle";		//【コマの初期設定】
+	var pieceSrc = "queen_1";		//【コマの初期設定】
 
 	var easy = false;						//【EASYモードのON(true)/OFF(false)】
 
